@@ -1,0 +1,170 @@
+/* ===== General Layout ===== */
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Header ===== */
+.dashboard-header {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 16px 16px;
+}
+
+.dashboard-header h2 {
+  font-size: 1.8rem;
+  color: #0d47a1;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d47a1;
+}
+
+.logout-btn {
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c62828;
+}
+
+/* ===== Main Section ===== */
+.dashboard-main {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #1565c0;
+  text-align: center;
+}
+
+/* ===== Cards Grid ===== */
+.distributions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Each card */
+.distribution-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 1 1 350px; /* Min width 350px, auto expand */
+  max-width: 370px;
+}
+
+.distribution-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Card Header ===== */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.agent-info p,
+.file-info p {
+  margin: 0.3rem 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* ===== Table ===== */
+.card-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.card-table th,
+.card-table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.card-table th {
+  background: #e3f2fd;
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.card-table tr:hover td {
+  background-color: #f5f5f5;
+}
+
+/* ===== Messages ===== */
+.error-message {
+  color: #d32f2f;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.no-data {
+  background: #f1f8e9;
+  color: #558b2f;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* ===== Footer ===== */
+.dashboard-footer {
+  width: 100%;
+  background-color: #1565c0;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 12px 12px 0 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}

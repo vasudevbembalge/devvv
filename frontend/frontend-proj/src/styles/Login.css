@@ -1,0 +1,70 @@
+.login-container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-top: 10px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-form button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.hint {
+  text-align: center;
+  color: #666;
+  margin-top: 14px;
+  font-size: 14px;
+}
+.dashboard-footer {
+  width: 100%;
+  background-color: #1565c0;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 12px 12px 0 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
