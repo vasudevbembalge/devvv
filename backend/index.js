@@ -41,8 +41,10 @@ app.get("/dashboard", auth, async (req, res) => {
 });
 
 // ✅ MongoDB Connection
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://ks3409192_db_user:XPksZDWEXS3gp5V7@machinetest.qhyuma8.mongodb.net/?appName=Machinetest";
+
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(MONGODB_URI)
   .then(() => console.log("✅ Connected to MongoDB successfully"))
   .catch((err) => console.error("❌ Error connecting to MongoDB:", err));
 
