@@ -17,13 +17,15 @@ pipeline {
 
         stage('Run Backend Container') {
             steps {
-                bat 'docker run -d -p 4000:4000 machinetest-backend'
+                bat 'docker rm -f machinetest-backend-run || exit 0'
+                bat 'docker run -d --name machinetest-backend-run -p 4000:4000 machinetest-backend'
             }
         }
 
         stage('Run Frontend Container') {
             steps {
-                bat 'docker run -d -p 3000:5173 machinetest-frontend'
+                bat 'docker rm -f machinetest-frontend-run || exit 0'
+                bat 'docker run -d --name machinetest-frontend-run -p 3000:5173 machinetest-frontend'
             }
         }
 
